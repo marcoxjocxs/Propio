@@ -1,0 +1,65 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    
+}
+.contenedor{
+    height: 100%;
+}
+header{
+    
+    height: 10%;
+    background-color: skyblue;  
+    color: white;
+    font-size: 26px;
+    
+}
+.caja{
+    height: 80%;
+    background-color: white;
+}
+.cajainterior{
+    
+    border: 1px solid white;
+    height: 98%;
+    width: 58%;
+    position: relative;
+    margin: 1% 20% 1% 20%;
+}
+.main-content,.sidebar,.twin,.twin2{
+    float: left;
+}
+.main-content{
+    width: 69.5%;
+    height: 59%;
+    background-color: lightgreen;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+.sidebar{
+    width: 29.5%;
+    height: 59%;
+    background-color: violet;
+    margin-bottom: 1%;
+}
+.twin{
+    width: 49.5%;
+    height: 40%;
+    background-color: orange;
+    margin-right: 1%;
+}
+.twin2{
+    width: 49.5%;
+    height: 40%;
+    background-color: orange;
+}
+footer{
+    height: 8%;
+    background-color: blue;
+}
+
+
