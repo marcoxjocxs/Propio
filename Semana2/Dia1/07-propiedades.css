@@ -1,0 +1,39 @@
+body{
+    background-image: url(./Image/textura2.jpg)
+}
+h1{
+    text-shadow: rgb(128,128,128) 4px 4px 5px;
+    -webkit-text-stroke-width:1px;
+    -webkit-text-stroke-color:red;
+}
+#sombra{
+    color: white;
+    border: 2px solid #14c6cc;
+    /* box-shadow como minimo necesita 2 valores */
+    /* El 3er alor sera la difuminacion de la sombra */
+    /* 4 valoe sera el tamaño de la combra */
+    /* el ultimo valor sera el color de la combra */
+    box-shadow:4px 4px 10px 12px #7dd5d8;
+    height: 500px;
+    /* background-image:linear-gradiente permite utilizar 2 colores que esta como del tamaño de una imagen */
+    background-image: linear-gradient(45deg,red,orange,yellow);
+    background:-webkit-radial-gradient(right,ELLIPSE,transparent,darkblue);
+    
+
+}
+#image{
+    width:800px;
+    /* GRAYSCALE va de 0 a 1 en escala de grises */
+    /* filter:grayscale(1); */
+    /* lo que hace saturate  cambia la saturacion de colores de la imagen de 0 a 10*/
+    /* filter: saturate(3); */
+    /* Brightness cambia el brillo de la imagen  de 0.1 a 10*/
+    /* filter: brightness(2); */
+    /* inverita mi imagen en negativo 0 a 1*/
+    /* filter: invert(1); */
+    /* blur difuminara mi imagen de 0 a 10px*/
+    /* filter: blur(5px); */
+    /* cambiara el contraste de la imagen de 1 a 10 */
+    /* filter: contrast(5); */
+    
+}

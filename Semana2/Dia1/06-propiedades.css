@@ -1,0 +1,61 @@
+/*  Le quitamos a todo elemento cuaquier margin o padding que pueda tener una cantidad predeterminada */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('./Image/textura2.jpg');
+}
+#contenedor{
+    /* color: white; */
+    border: red 1px solid;
+    margin: 40px;
+    padding: 20px;
+}
+#caja1{
+    
+    /* color: white; */
+    height: 600px;
+    color: white;
+    border: blue 1px solid;
+    /* Esto aplica para margin y padding */
+    /* Si pongo dos variables,la primera sera para arriba y abajo y la segunda para los costados  */
+    padding: 10px 110px;
+    background: rgba(200,45,98,0.5) url('./Image/fire.jpg');
+    background-repeat: repeat-x;
+
+}
+#caja2{
+    /* text-align: justify; */
+    text-align: center;
+    border-radius:50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radiuz:50%;
+    border: purple 2px solid;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    margin-right: 70px;
+    
+    /* Arriba(Top) derecha(right) abajo(bottom) izq(left) */
+    padding: 20px 40px 60px 80px;
+    width: 600px;
+    height: 600px;
+    background-image: url('./Image/icon.jpg');
+    background-repeat: repeat-y;
+}
+#caja3{
+    /* border-width: 6px ; */
+    border-top-width: 2px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 6px;
+
+    border-color: rgb(180,50,120);
+    /* dotted,dashed,solid,double */
+    border-bottom-style:dotted;
+    border-top-style: dotted;
+    border-right-style: dashed;
+    border-left-style: dashed;
+    border-radius: 15%;
+}

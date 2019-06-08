@@ -1,0 +1,20 @@
+h1{
+    color: green;
+}
+/* Pero la segunda manera va a usar una combinacion de rojo verde y azul */
+#rgb{
+    color:rgb(100, 255, 183);
+}
+#hex{
+    color: #FF5628;
+}
+#rgba{
+    color: rgba(20,20,240,0.5);
+}
+#tamanio{
+    width: 300px;
+    height: 400px;
+    border: 1px solid;
+    /* overflow:hidden */
+    overflow: scroll;
+}

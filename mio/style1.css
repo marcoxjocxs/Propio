@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+header{
+    background-color: bisque;
+    height: 35%;
+}
+header>h1{
+    text-align: center;
+    color: blue;
+}
+.s1, .s2{
+    height: 100%;
+}
+.s1{
+    border: 1px solid blue;
+    height: 50%;
+    
+}
+div{
+    display: inline-block;
+}
+#div1{
+    border: 1px solid red;
+    width: 20%;
+    height:100%
+}
+#div2{
+    border: 1px solid green;
+    width: 40%;
+    height:100%
+}
+#div3{
+    border: 1px solid green;
+    width:40%;
+    height:100%
+}
+.s2{
+    border: 1px solid blue;
+    height: 50%;
+}
+main{
+    height: 75%;
+    background-color: white;
+}

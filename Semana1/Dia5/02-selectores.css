@@ -1,0 +1,29 @@
+/* Este es mi comentario */
+/* con " * "  asterisco se llama a todo */
+*{
+    color:violet;
+}
+p{
+    color:firebrick;
+    font-size:30px;
+}
+label{
+    color:purple;
+}
+span{
+    color:skyblue;
+}
+div label{
+    font-size:50px;
+    color:hotpink;
+}
+div > label{
+    color:blue;
+}
+h1 + h2{
+    font-weight:bold;
+    color:green;
+}
+h3,h4,h5{
+    background-color: yellow;
+}

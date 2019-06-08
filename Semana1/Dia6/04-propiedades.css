@@ -1,0 +1,51 @@
+/* Solo estamos llamando a  mi archivo fuente y poniendo un aluas ,No lo estoy asignando todavia */
+@font-face{
+    font-family: 'codigo';
+    src: url('./AlexBrush-Regular.ttf')
+}
+h1{
+    font-family: 'Indie Flower', cursive;
+}
+
+#fontfamily{
+    font-family: cursive;
+}
+#fontsize{
+    font-size:40px;
+}
+#fontweight{
+    font-weight:bold;
+}
+#fontstyle{
+    font-style: italic;
+}
+/* Estilos (bold italic) tamaño(24px)  */
+#font{
+    font: bold 24px Arial cursive;
+}
+#textalign{
+    text-align: center;
+}
+#textalign2{
+    text-align: justify;
+}
+#textindent{
+    text-indent: 30px;
+}
+#letterspacing{
+    letter-spacing: 6px;
+}
+#wordspacing{
+    word-spacing:15px;
+}
+#lineheight{
+    line-height: 50px;
+}
+#textdecoration{
+    text-decoration:underline red;
+}
+#customfont{
+    font-family:'codigo';
+    user-select: none;
+    -moz-user-select: none;
+}

@@ -1,0 +1,34 @@
+body{
+    background-image:url("./image//cielo.png");
+    background-attachment: fixed;
+}
+@font-face{
+    font-family: 'codigo';
+    src: url('./AlexBrush-Regular.ttf')
+}
+
+@font-face{
+    font-family: 'codigo2';
+    
+    src: url('./KaushanScript-Regular.otf')
+}
+@font-face{
+    font-family: 'codigo3';
+    src: url('./Quicksand-Bold.otf')
+}
+#titulo{
+    color: RED;
+    font-weight: bold;
+    font-family:'codigo';
+}
+#subtitulo{
+    font-family:'codigo2';
+    color: white;
+    font-weight:bold;
+}
+.parrafo{
+    font-family:'codigo3';
+    color: gray;
+    text-align: justify;
+}
+

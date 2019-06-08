@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+body,html{
+    height: 100%;
+
+}
+header{
+    height: 10%;
+    background-color: skyblue;
+}
+.contenedor{
+   height: 100%;
+   width: 80%;
+   margin: 0 10%;
+
+}
+.superior{
+    height: 60%;
+    
+}
+.superior>.hero{
+    width: 40%;
+    float: left;
+    height: 45%;
+    background-color: RED;
+}
+.superior>.sidebar{
+    width: 40%;
+    height: 55%;
+    float: left;
+    background-color: blue;
+    clear: left;
+}
+.superior>.maincontent{
+    height: 75%;
+    width: 60%;
+    float:right;
+    background-color: yellow;
+}
+.superior>.extracontent{
+    height: 25%;
+    width: 60%;
+    float: right;
+    background-color:green;
+}
+.inferior{
+    height: 30%;
+}

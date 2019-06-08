@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+   
+}
+body,html{
+    
+    height: 100%;
+    width: 100%;
+}
+header{
+    border: 1px solid green;
+    background-color: green;
+    height: 20%;
+    display: block;
+}
+main{
+    height: 80%;
+    width: 100%; 
+    box-sizing: border-box;
+    display: inline-block;
+}
+section{
+    display: inline-block;
+}
+section.un{
+    border: 1px solid yellow;
+    background-color: yellow;
+    height: 100%;;
+    width: 40%;
+   
+}
+section.do{
+    border: 1px solid tomato;
+    background-color: tomato;
+    
+    height: 100%;
+    width: 60%;
+
+  
+
+    
+}

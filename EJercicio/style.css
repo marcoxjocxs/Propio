@@ -1,0 +1,20 @@
+body{
+    background-image: url('./img/border.jpg');
+    text-align: center;
+    background-color: white;
+}
+.imgRedonda {
+    width:300px;
+    height:300px;
+    border-radius:150px;
+}
+#primercuadro{
+    width: 300px;
+}
+#enviar{
+    color: white;
+}
+footer{
+    background-color: red;
+    color: white;
+}

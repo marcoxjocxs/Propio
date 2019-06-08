@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <form action="">
+        <!-- Fildset es para agrupar -->
+        <fieldset>
+            <!-- Legend es un complemento del fieldset que sirve para el titulo de la agrupacion-->
+            <legend>Datos del Usuario</legend>
+            <p><label>Nombre :</label><input type="text"></input></p>
+            <p><label>Apellido:</label><input type="text"></input></p>
+            <p><label>Fecha de Nacimiento:</label><input type="date"></input></p>
+        </fieldset>
+        <hr />
+        <fieldset>
+            <legend>Datos del Usuario</legend>
+
+            <table>
+                <tr>
+                    <td><label for="nombre">Nombre :</label></td>
+                    <td><input type="text" placeholder="Ejm: Hacks" required minlength="2" maxlength="50" autofocus
+                            tabindex="1" id="nombre"></td>
+                </tr>
+                <tr>
+                    <td><label for="apellido">Apellido:</label></td>
+                    <td><input type="text" tabindex="2" id="apellido"></td>
+                </tr>
+                <tr>
+                    <td><label for="fechadenacimiento">Fecha de Nacimiento:</label></td>
+                    <td><input type="date" tabindex="3" id="fechadenacimiento"></input></td>
+                </tr>
+                <tr>
+                    <td><label for="hora">Hora de Ingreso:</label></td>
+                    <td><input type="time" tabindex="4" id="hora"></input></td>
+                </tr>
+                <tr>
+                    <td><label for="contraseña">Contraseña:</label></td>
+                    <td><input type="password" tabindex="5" id="contraseña" requerid
+                            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Debe de contener 1=Mayuscula,1=numero puede tener de 8 a mas letras" /><br />
+                        <small>Al menos una mayuscula,1 numero,De 8 a mas caracteres</small></td>
+                </tr>
+                <tr>
+                    <td><label for="correo">Correo Electronico:</label></td>
+                    <td><input type="email" tabindex="6" id="correo"></input></td>
+                </tr>
+                <tr>
+                    <td><label for="color">Color:</label></td>
+                    <td><input type="color" tabindex="7" id="color"></input></td>
+                </tr>
+                <tr>
+                    <td><label for="foto">Foto de Perfil</label></td>
+                    <td><input type="file" tabindex="8" id="foto"></input></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Registrar" tabindex="9">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>Daredevil</label>
+                        <input type="radio" name="serie" values="D">
+                        <label>Jessica Jones</label>
+                        <input type="radio" name="serie" values="J">
+                        <label>Lucifer</label>
+                        <input type="radio" name="serie" values="L">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <label>Comedia</label>
+                        <input type="checkbox" name="comedia" value="COM">
+                        <label>Ciencia Ficcion</label>
+                        <input type="checkbox" name="ciencia-ficcion" value="CF">
+                        <label>Documentales</label>
+                        <input type="checkbox" name="documentales"value="DL" disabled>
+                    </td>
+                </tr>
+                <!-- Selected detnro de un option indica solo que estara selecionado -->
+                <!-- Disabled es para desactivar la opcion -->
+                <tr>
+                    <td colspan="2">
+                        <select name="The_Beatles">
+                            <option value="1">Hey Jude</option>
+                            <option value="2" selected>Yesterday</option>
+                            <option value="3">Let it be</option>
+                            <option value="4" disabled>Imagine</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>

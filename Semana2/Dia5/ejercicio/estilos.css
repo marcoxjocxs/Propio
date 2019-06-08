@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    background-color: gray;
+
+}
+body{
+    padding: 5%
+}
+.sobrante{
+    height: 150px;
+    width: 400px;
+    box-shadow: 3px 3px 5px black;
+    background-color: blue;
+    margin: 0 auto;
+}
+.contenedor{
+    font-family: 'Ruge Boogie', cursive;
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    /* box-shadow pide la sombra horizontal ,vertical,difusion y color */
+    box-shadow: 3px 3px 5px black;
+    margin: 0 auto;
+    
+}
+.imagen{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border: 5px solid white;
+    position: relative;
+    left: 125px;
+    top: -75px;
+}
+.texto{
+    text-align: center;
+}
+
+.linea{
+    border: 0;
+    border: 1px solid black;
+    width: 80%;
+    position: relative;
+    left: 30px;
+}
+h3{
+    font-size: 16px;
+}

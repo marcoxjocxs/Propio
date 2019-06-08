@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    background-color: gray;
+
+}
+body{
+    padding: 5%
+}
+.contenedor{
+    font-family: 'Ruge Boogie', cursive;
+    height: 350px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: white;
+    /* box-shadow pide la sombra horizontal ,vertical,difusion y color */
+    box-shadow: 3px 3px 5px black;
+    margin: 0 auto;
+    padding: 0px 10px 10px 10px;
+}
+.caja{
+    position: relative;
+    top: -60px;
+    width:260px;
+    margin: 0 auto;
+    text-align: center;
+}   
+.portada{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border: 3px solid steelblue;
+    position: relative;
+    left: 100px;
+    top: -75px;
+}
+.olvido{
+    position: relative;
+    top:-40px;
+    text-align: center;
+    font-size: 15px;
+    background-color: rgb(231, 226, 226);
+    color: gray;
+}
+.input{
+    border: 0;
+    padding: 5px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+}
+h1{
+    margin-bottom: 30px;
+}
+.button{
+    padding: 15px;
+    border: 0;
+    border-radius: 12px;
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    font: 14px 'Ruge Boogie' bold;
+    width: 200px;
+
+}

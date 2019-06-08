@@ -1,0 +1,49 @@
+
+#caja{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border: 4px dashed gray;
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function:ease;
+    
+    /* transform: scale(2); */
+    /* ejeX y ejeY */
+   /*  transform: scale(2) translate(50%,50%) rotate(45deg) skewX(20deg); */
+
+}
+#caja:hover{
+   /*  background-color: green;
+    border: 6px dotted blue; */
+    transform:translate(50%,50%) scale(1.2) rotate(1080deg) ;
+    
+}
+#caja2{
+width: 300px;
+height: 300px;
+background-color: rgb(80,20,200);
+border: 3px solid yellow;
+/* transform: translate(44px,44px)  skew(20deg); */
+/* transform: skewX(20deg) skewY(45deg); */
+transform: rotate(45deg);
+
+}
+#bola1, #bola2{
+    width: 100px;
+    height: 100px;
+    border: 5px solid red;
+    border-radius: 50%;
+    transition-duration: 4s;
+}
+#bola1{
+    background-color: blue;
+    transition-timing-function: ease;
+}
+#bola2{
+    background-color: yellow;
+    transition-timing-function: linear;
+}
+#bola2:hover, #bola1:hover{
+    transform:translate(700px);
+}

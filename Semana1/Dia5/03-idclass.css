@@ -1,0 +1,59 @@
+body{
+    background-image:url("./image//cielo.png");
+    background-attachment: fixed;
+}
+   
+#tabla1{
+    color:white;
+    font-size:20px;
+}
+ 
+/* bold es negrita  , bolder es mas negrita */
+#tabla2{
+    background-color: black;
+    color:white;
+    font-weight:bold;
+}
+.vparrafos{ /* Esta es una clase*/
+    /* Ancho de letra es font-weight */
+    font-weight:bolder;
+    background-color:greenyellow;
+    color: orangered;
+}
+section .multiple{
+    background-color: skyblue;
+    color: green;
+}
+.article p{
+    color: blue;
+    background-color: gray;
+    font-style: italic;
+    font-size: 25px;
+}
+label[for]{
+    background-color: skyblue;
+    font-size:24px;
+}
+
+label[for="variable"]{
+    background-color: red;
+    font-size: 30px;
+    font-weight: bold;
+}
+#tabla1 tr:nth-child(3){
+    background-color:skyblue;
+    font-weight:bold;
+}
+/* even para seleccionar los pares y odd para los impares */
+#tabla2 tr:nth-child(even)
+{
+    background-color: gray;
+    color: black;
+}
+.excepcion{
+    color: black;
+}
+div:not(.excepcion){
+    font-size: 40px;
+    background-color: violet;
+}
