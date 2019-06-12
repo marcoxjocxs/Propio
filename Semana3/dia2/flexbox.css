@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+#papa{
+    height: 100%;
+    display: flex;
+    /* justify-content pretederminadamente va a ser flex-start,flex-end, center */
+    /* space-between se encarga de separarlos pero no deja espacio en los constados */
+    /* space-around se encarga de separarlos pero deja espacion es los finales */
+    /*  space-evenly es parecido al space-around pero deja espacion del mismo tamaño entre las formas que coloquemos */
+    /*     justify-content:space-evenly; */
+    /* row es por defecto ,row reverse es para invertir el orden de los valores */
+    /* colum para dejarlo en columnas  */
+    flex-direction: row;
+    align-items: start;
+    flex-wrap: wrap;
+
+}
+.hijo{
+    border: steelblue 5px solid;
+    background-color: darkblue;
+    width:300px;
+    height: 300px;
+    color: white;
+    font-size: 30px;
+    /* When I use 0 va a dejar que se noten todos pero te crea el scroll de ancho y con 1 los vuelve mas chiquitos */
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+#mayor{
+    flex-grow: 5;
+    flex-basis: 500px;
+    /* flew-grow   flex-shrink  flex-basis */
+    flex: 1 0 45%;
+}

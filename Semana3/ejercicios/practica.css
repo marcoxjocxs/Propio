@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+}
+
+/* --------------------------------Part Arriba------------------------ */
+.caja {
+    height: 100%;
+    
+}
+.part{
+    display: flex;
+    
+    
+}
+.h1{
+    position:relative;
+    top: 30px;
+}
+.header{
+    height: 20%;
+    
+}
+.linea{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+}
+.hijo1{
+    width: 70%;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: 1px solid red;
+}
+.hijo2{
+    width: 20%;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    justify-content: flex-end;
+    border: 1px solid red;
+}
+
+/* --------------------------------Part Abajo ------------------------ */
+
+.main {
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.cont1{
+    width: 70%;
+    height: 100%;
+    border: 1px solid gray;
+
+}
+.cont2{
+    width: 28%;
+    height: 100%;
+    border: 1px solid gray;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cajamain{
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.padre1{
+    margin-top: 1%;
+    width:30%;
+    height: 90%;
+    border: 1px solid black;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.padre2{
+    margin-top: 1%;
+    width:  30%;
+    height: 90%;
+    border: 1px solid black;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.padre3{
+    margin-top: 1%;
+    width:30%;
+    height: 90%;
+    border: 1px solid black;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.padre4{
+    margin-top: 1%;
+    width:30%;
+    height: 90%;
+    border: 1px solid black;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.arriba,.abajo{
+    flex-grow: 1;
+    /* con flex-shrink hacemos que no se encoja con el valor 0 */
+    flex-shrink: 0;
+    /* flex-basis es para darle un tamaño */
+    flex-basis: 50%;
+}
+.abajo{
+    padding: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.abajo p{
+    margin-top: 15px;
+    font-size: 16 px;
+    text-align: justify;
+    
+}
+.arriba{
+    background-image: url('http://lorempixel.com/300/300/animals')
+}
+.cajas{
+    height: 6%;
+    border: 1px solid black;
+}
+.cajas2{
+    height: 40%;
+    border: 1px solid black;
+}
