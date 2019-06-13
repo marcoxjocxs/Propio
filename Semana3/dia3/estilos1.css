@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body,html{
+    height: 100%;
+}
+
+#papa{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header1{
+    height: 20%;
+    border: 1px solid black;
+}
+.main1{
+    height: 60%;
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+    
+    
+}
+.footer1{
+    height: 20%;
+    border: 1px solid black
+}
+.nav{
+    height: 100%;
+    width: 25%;
+    border: 1px solid black;
+}
+.article{
+    height: 100%;
+    width: 50%;
+    border: 1px solid black;
+}
+.aside{
+    height: 100%;
+    width: 25%;
+    border: 1px solid black;
+}

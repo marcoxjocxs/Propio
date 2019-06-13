@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    height: 100%;
+}
+header{
+    height:  60px;
+    border: 1px solid rgb(103, 189, 223);
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(103, 189, 223);;
+}
+.menu{
+    border: 1px solid rgb(103, 189, 223);
+    display: flex;
+    align-items: center;
+    flex-grow: 8;
+}
+.menu h1{
+    margin: 0 20px;
+}
+.menu label{
+    margin: 0 10px;
+}
+.busqueda{
+    /* border: 1px solid rgb(103, 189, 223); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+input{
+    /* padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px; */
+    border: 0;
+    height: 30px;
+    background: transparent;
+    border-bottom: 1px solid white;
+    color: white;
+   
+}
+
+main{
+    display: flex;
+
+}
+.primicia{
+    flex: 2 0 65%;
+    height: 400px;
+    background-image: url('./imagen.jpg');
+    background-position: center;
+    display: flex;
+}
+.titulo{
+    height: 30%;
+    width: 100%;
+    
+    align-self: flex-end;
+    background-color: rgba(60,60,60,0.8);
+    color: white;
+    font-family: 'Roboto',sans-serif;
+    padding: 10px;
+}
+.publicidad{
+    flex: 0 0 35%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: darkblue;
+    color: white;
+    font-family: sans-serif;
+
+}
+/* -------------------------------------------------------------------------------------------------------------------------- */
+
+footer{
+    display: flex;
+
+}
+.not1,.not2,.not3{
+    width: 33.3%;
+    height: 450px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.arriba1,.arriba2,.arriba3,.abajo{
+    flex-grow: 1;
+    /* con flex-shrink hacemos que no se encoja con el valor 0 */
+    flex-shrink: 0;
+    /* flex-basis es para darle un tamaño */
+    flex-basis: 50%;
+}
+.abajo{
+    padding: 20px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.abajo p{
+    margin-top: 15px;
+    font-size: 16 px;
+    text-align: justify;
+}
+.arriba1{
+    background-image: url('./will.jpg');
+    background-position: center;
+}
+.arriba2{
+    background-image: url('./Shaki.jpg');
+    background-position: center;
+}
+.arriba3{
+    background-image: url('./tatu.jpg');
+    background-position: center;
+}
+/* -------------------------------------------------------------------------------------------------------------------------- */
+@media screen  and (max-width:700px){
+    header{
+        flex-direction: column;
+        height:auto;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .busqueda{
+        justify-content: center;
+    }
+    main{
+        
+        display: block;
+    }
+    .primicia{
+        height: 300px;
+    }
+    .titulo{
+        height: 25%;
+    }
+    .publicidad {
+        height: 150px;
+    }
+    .publicidad p{
+        margin: auto;
+    }
+    footer{
+        display: block;
+    }
+    .not1,.not2,.not3{
+        width: auto;
+
+    }
+}
+
