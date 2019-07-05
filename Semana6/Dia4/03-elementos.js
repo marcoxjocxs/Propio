@@ -12,7 +12,7 @@ var productos = [{
     precio: 400.00,
     imagen: "http://placehold.it/100x100/",
     existencias: 10,
-    estado: "activo"
+    estado: "inactivo"
 },
 {
     codigo: "0003",
@@ -39,6 +39,7 @@ principal.appendChild(mitable);
 
 for(var i = 0; i < productos.length; i++){
     //Creando fila por cada vuelta
+    
     var trFila=document.createElement("tr");
     //Creando 6columna por cada vuelta
     var tdCodigo=document.createElement("td");
@@ -56,17 +57,33 @@ for(var i = 0; i < productos.length; i++){
     tdCodigo.innerHTML=productos[i].codigo;
     tdDescripcion.innerHTML=productos[i].description;
     tdPrecio.innerHTML=productos[i].precio;
+    //////////////////////////////////////////////////////
     tdImagen.appendChild(imagen);
+    /////////////////////////////////////////////////////
+    ///////////////////////Forma 2///////////////////////
+    tdImagen.innerHTML=`<img src=${productos[i].imagen}/>`
+    /////////////////////////////////////////////////////
     tdExistencia.innerHTML=productos[i].existencias;
     tdEstado.innerHTML=productos[i].estado;
+    tdEstado.style.color=productos[i].estado ==="inactivo" ? "red": "green";
+    if(productos[i].estado=="activo")
+    {
+        tdEstado.style.color="green";
+    }
+    else{
+        tdEstado.style.color="red";
+    }
+
+    
     //Inyextando los TD's dentro del tr o FILA
+    
     trFila.appendChild(tdCodigo);
     trFila.appendChild(tdDescripcion);
     trFila.appendChild(tdPrecio);
     trFila.appendChild(tdImagen);
     trFila.appendChild(tdExistencia);
     trFila.appendChild(tdEstado);
-
+    
     //inyecta todo el tr o fila en la tabla
     mitable.appendChild(trFila);
 }
