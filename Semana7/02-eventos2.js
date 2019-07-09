@@ -26,22 +26,22 @@ inputCorreo.onblur=function(){
     inputCorreo.style.borderRadius="0px";
     var palabra=inputCorreo.value;
     span1.setAttribute("hidden","true");
+    var error = false;
     for(var i=0;i<personas.length;i++)
     {
         if(palabra===personas[i].correo)
         {
             span1.removeAttribute("hidden");
             console.log("El correo existe");
+            error=true;
             break;
         }
     }
-    for(var i=0;i<personas.length;i++)
-    {
-        if(palabra!==personas[i].correo)
-        {
-            console.log("El correo disponible");
-            break;
-        }
+    if(error==false){
+        console.log("El correo no existe");
+        span1.removeAttribute("hidden");
+        span1.innerHTML="Disponible";
     }
+    
 }
 
