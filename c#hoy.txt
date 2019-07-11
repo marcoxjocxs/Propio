@@ -1,0 +1,130 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Caracteres
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nombre = "Marco";
+            char primeraInicial = 'M';
+            char c = 'm';
+            char[] arregloNombre = nombre.ToCharArray();
+            //IsLetter nos devuelve un bool 
+            Console.WriteLine(char.IsLetter(primeraInicial));
+            char.IsSymbol(primeraInicial);
+            //IsDigit nos va devolver si es un digito
+            Console.WriteLine(char.IsDigit(c));
+
+
+            //Sacar el costo total de un mensaje dado que una letra cuesta 0,1
+            //numero cuesta 0,15 y los espacios son gratuitos
+            string palabra = "hola que tal2$";
+            string palabra1 = "marcojose";
+            string panvocal = "murcielago";
+            Costo(palabra);
+            causha(palabra1);
+            panvocalica(panvocal);
+            panvocalica(palabra);
+        }
+        static void Costo(string palabra)
+        {
+            double total    = 0;
+            char[] arreglo = palabra.ToCharArray();
+            for (int i = 0; i < arreglo.Length; i++)
+            {
+                if (char.IsLetter(arreglo[i]))
+                {
+                    total = total + 0.10;
+                }
+                else
+                {
+                    if (char.IsDigit(arreglo[i]))
+                    {
+                        total = total + 0.15;
+                    }
+                    else
+                    {
+                        if (char.IsSymbol(arreglo[i]))
+                        {
+                            total = total + 0.20;
+                        }
+                    }
+                }
+            }
+            Console.WriteLine($"El total es {total}");
+        }
+        static void causha(string palabra)
+        {
+            char[] cadenaletras = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'x', 'y', 'z' };
+            char[] cadena = { '@', 'B', 'c', 'D', '3', 'f', '6', 'H', '1', 'j', 'K', '1', 'M', 'n', '0', 'P', 'q', 'R', '5', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' };
+            char[] cadenapalabra = palabra.ToCharArray();
+            int num;
+            for (int i = 0; i < cadenapalabra.Length; i++)
+            {
+                num = 0;
+                for (int j = 0; j < 25; j++)
+                {
+                    if (cadenapalabra[i] == cadenaletras[j])
+                    {
+                        num = j;
+                    }
+                }
+                cadenapalabra[i] = cadena[num];
+            }
+            Console.WriteLine(cadenapalabra);
+        }
+        static void panvocalica(string palabra)
+        {
+            char[] arreglo = palabra.ToCharArray();
+            char[] vocales = { 'a', 'e', 'i', 'o', 'u' };
+            bool[] arreglobool = {false,false,false,false,false};
+            
+
+            for (int j = 0; j < arreglo.Length; j++)
+            {
+
+                if (arreglo[j] == vocales[0])
+                {
+                    arreglobool[j] = true;
+                }
+                if (arreglo[j] == vocales[1])
+                {
+                    arreglobool[j] = true;
+                }
+                if (arreglo[j] == vocales[2])
+                {
+                    arreglobool[j] = true;
+                }
+                if (arreglo[j] == vocales[3])
+                {
+                    arreglobool[j] = true;
+                }
+                if (arreglo[j] == vocales[4])
+                {
+                    arreglobool[j] = true;
+                }
+            }
+            bool bandera = false;
+            for (int i = 0; i < arreglobool.Length; i++)
+            {
+                if (arreglobool[i] == true)
+                {
+                    bandera = true;
+                }
+            }
+            if (bandera == true)
+            {
+                Console.WriteLine("Es un panvocalica");
+            }
+            else
+            {
+                Console.WriteLine("No es panvocalica");
+            }
+        }
+    }
+}
