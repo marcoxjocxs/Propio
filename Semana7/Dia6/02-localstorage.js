@@ -37,6 +37,6 @@ window.onload = function(){
         //console.log(tarea);
         //console.log(tarea.parentNode);
         tarea.parentNode.removeChild(tarea);
-        guardar();
+        guardar(); 
     })
 }
