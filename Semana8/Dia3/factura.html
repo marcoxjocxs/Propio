@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="./factura.js"></script>
+    <style>
+        html,body{
+            background-color: aquamarine;
+            height: 100%;
+            width: 100%;
+        }
+        #btnAgregar{
+            background-color: yellow;
+            color: black;
+            height: 50px;
+            width: 50px;
+        }
+        .container{
+            position: relative;
+            top: 40px;
+            font-family: 'Baloo', cursive;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <table class="table">
+                <tr>
+                    <td>Fecha</td>
+                    <td><input type="date" class="form-control" style="background: transparent" id="inputFecha"></td>
+                </tr>
+                <tr>
+                    <td>Nombre</td>
+                    <td><input type="text" placeholder="Ingrese el nombre " class="form-control" style="background: transparent" id="inputNombre"></td>
+                </tr>
+                <tr>
+                    <td>RUC/DNI</td>
+                    <td><input type="text" placeholder="Ingrese su RUC/DNI" class="form-control" style="background: transparent" id="inputDni"></td>
+                </tr>
+                <tr>
+                    <td>Dirección: </td>
+                    <td><input type="text" style="background: transparent" class="form-control" id="inputDireccion"></td>
+                </tr>
+            </table>
+        
+            <table class="table">
+                <thead >
+                    <tr class="table-warning" style="text-align: center">
+                            <td>Cant.</td>
+                            <td>Descripción</td>
+                            <td>P.unitario</td>
+                            <td>Valor Venta</td>    
+                    </tr>
+                  
+                </thead>
+                <tbody id="tProductos" style="text-align: center" >
+                    
+                </tbody>
+                <tfoot>
+                    <tr  style="text-align: center">
+                        <td colspan="3" class="text-right">Total: </td>
+                        
+                        <td id="tdTotal"></td>
+                    </tr>
+                </tfoot>
+            </table>
+            
+            <input type="number" min="1" max="10" placeholder="Cant." id="inputCant" style="right: 20px" style="text-align: center">
+
+            <input type="text" placeholder="Producto" id="inputProd" style="text-align: center">
+          
+            <input type="text" placeholder="Precio" id="inputPrecio" style="text-align: center">
+
+            <button style="border-radius: 50%" id="btnAgregar">+</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
