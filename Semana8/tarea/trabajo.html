@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+       
+    </style>
+    <script>
+        window.onload = function(){
+            var btnInsertar=document.getElementById("btnInsertar");
+            btnInsertar.onclick = function(){
+                    var cantidadInput = document.getElementById("cantidadInput").value;
+                    var descripcionInput = document.getElementById("descripcionInput").value;
+                    var puinput = document.getElementById("puinput").value;
+                    var tablabody=document.getElementById("tablabody");
+                    var tr=document.createElement("tr");
+                    var td1=document.createElement("td");
+                    var td2=document.createElement("td");
+                    var td3=document.createElement("td");
+                    var td4=document.createElement("td");
+
+                    td1.innerHTML=cantidadInput;
+                    td2.innerHTML=descripcionInput;
+                    td3.innerHTML=puinput;
+                    td4.innerHTML=parseInt(cantidadInput)*parseInt(puinput);
+                    tr.appendChild(td1);
+                    tr.appendChild(td2)
+                    tr.appendChild(td3);
+                    tr.appendChild(td4);
+
+                    tablabody.appendChild(tr);
+                    var totalgeneral=document.getElementById("totalgeneral");
+                    totalgeneral.innerHTML= +(totalgeneral.innerHTML)+(cantidadInput*puinput);
+
+                    cantidadInput.innerHTML="";
+                    descripcionInput.innerHTML="";
+                    puinput.innerHTML="";
+                    .innerHTML="";
+
+            }
+
+
+    
+        }
+    </script>
+</head>
+<body>
+    
+    <div class="container">
+        <h3>Ejercicio:<code>Ejercicio propuesto</code></h3>
+        <table class="table table-bordered tablageneral">
+            <thead>
+                <tr class="table-success">
+                    <th>Cantidad </th>
+                    <th>Descripcion</th>
+                    <th>Precio Unitario</th>
+                    <th>PrecioTotal</th>
+                </tr>
+            </thead>
+            <tbody id="tablabody">
+                    
+            </tbody>
+            <tfooter id="tfooter">
+                    <tr class="table table-warning">
+                        <td colspan="3">Total</td>
+                        <td id="totalgeneral"></td>
+                    </tr>
+            </tfooter>
+        </table>
+        <!--  
+        <input type="text" id="cantidadInput">
+        <
+        <input type="text" id="puinput">
+        <button id="btnInsertar">Guardar</button>
+        -->
+        <hr>
+        <div class="container">
+            <table>
+                    <tr class="table-success">
+                        <td style="padding-right: 100px"> <input type="text" id="cantidadInput"></input></td>
+                        <td style="padding-right: 100px"> <input type="text" id="descripcionInput"></input></td>
+                        <td style="padding-right: 100px"> <input type="number" id="puinput"></input></td>
+                        <td  style="padding-right: 180px"><button id="btnInsertar">Guardar</button></td>
+                    </tr> 
+                </table>
+        </div>
+       
+        
+       
+       
+        
+        
+        
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

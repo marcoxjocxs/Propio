@@ -60,4 +60,3 @@ console.log(this);
 //Hacemos referencia a la función Click pero a partir de dos elementos distintos
 
 cuadrado.onclick = Click;
-redondo.onclick = Click;
