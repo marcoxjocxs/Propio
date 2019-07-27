@@ -67,7 +67,7 @@ window.onload = function(){
 
         var textofiltrado = this.value;
         var filtrado =personas.filter(function(persona){
-            return persona.nombres.toLowerCase().includes(textofiltrado.toLowerCase()) || persona.apellidos.toLowerCase().includes(textofiltrado.toLowerCase());
+            return persona.nombres.toLowerCase().includes(textofiltrado.toLowerCase()) || persona.apellidos.toLowerCase().includes(textofiltrado.toLowerCase())|| toString(persona.edad).includes(textofiltrado);
         });
 
         rellenarCeldas(filtrado);
