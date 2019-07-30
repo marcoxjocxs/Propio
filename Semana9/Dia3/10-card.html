@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <title>Document</title>
+    <style>
+        .card-text{
+            max-height: 200px;
+            overflow:scroll;
+            overflow-x:hidden;
+            
+        }
+
+        .card-text::-webkit-scrollbar{
+            width: 12px;
+            background-color: beige;
+        }
+        .card-text::-webkit-scrollbar-track{
+            border-radius:10px;
+            background-color: #f4f4f4;
+
+            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.4);
+        }
+        .card-text::-webkit-scrollbar-thumb{
+            border-radius:10px;
+            background-color: rgba(0,0,0,0.4);
+            -webkit-box-shadow: inset 0 0 5px rgba(170, 72, 72, 0.4);
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+        <h1>Cards ò tarjetas</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <!-- card servira como contenedor a los demas elementos que componen un card -->
+                <div class="card">
+                    <!-- cuerpo -->
+                    <div class="card-body">
+                        <!-- titulo de la carta -->
+                        <h4 class="card-tittle">Apple</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quasi eaque accusantium
+                            doloribus nemo autem optio assumenda, ad odit a repudiandae nisi ipsa? Provident eum animi
+                            aliquid laborum doloremque laudantium.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <!-- card servira como contenedor a los demas elementos que componen un card -->
+                <div class="card">
+                    <!-- cuerpo -->
+                    <div class="card-body">
+                        <!-- titulo de la carta -->
+                        <h4 class="card-tittle">Samsung</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quasi eaque accusantium
+                            doloribus nemo autem optio assumenda, ad odit a repudiandae nisi ipsa? Provident eum animi
+                            aliquid laborum doloremque laudantium.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <!-- card servira como contenedor a los demas elementos que componen un card -->
+                <div class="card">
+                    <!-- cuerpo -->
+                    <div class="card-body">
+                        <!-- titulo de la carta -->
+                        <h4 class="card-tittle">Huawei</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quasi eaque accusantium
+                            doloribus nemo autem optio assumenda, ad odit a repudiandae nisi ipsa? Provident eum animi
+                            aliquid laborum doloremque laudantium.</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row mt-2">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-title">SmartCast
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quasi eaqu accusantium
+                            doloribus nemo autem optio assumenda, ad odit a repudiandae nisi ipsa? Provident eum animi
+                            aliquid laborum doloremque laudantium.</p>
+                        <a href="#" class="btn btn-success">Agregar a carrito</a>
+                        <img src="http://picsum.photos/300/300" class="card-img-bottom mt-1">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-title">SmartCast
+                        <img src="http://picsum.photos/300/300" class="card-img-top mt-1">
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quasi
+                            eaqu accusantium
+                            doloribus nemo autem optio assumenda, ad odit a repudiandae nisi ipsa? Provident eum animi
+                            aliquid laborum doloremque laudantium.</p>
+                        <a href="#" class="btn btn-success">Agregar a carrito</a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="http://picsum.photos/300/300" class="card-img">
+                    <div class="card-title">SmartCast
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quasi
+                            eaqu accusantium
+                            doloribus nemo autem optio assumenda, ad odit a repudiandae nisi ipsa? Provident eum animi
+                            aliquid laborum doloremque laudantium.</p>
+                        <a href="#" class="btn btn-success">Agregar a carrito</a>
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        Pizza
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Descripcion</h4>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aliquid libero impedit temporibus, porro adipisci aperiam amet hic asperiores mollitia dolore laudantium commodi, aliquam animi eaque iure iusto. Asperiores, vel.
+                        </p>
+                    </div>
+                    <div class="card-footer">El Oferta!</div>
+                </div>
+            </div>
+            <div class="col-md-4 mt-2">
+                <div class="card-header">
+                    Card con Barrita
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title"> Pizza con ....</h4>
+                    <p class="card-text">
+                            Es caro Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, nulla autem dicta doloribus corporis facere iusto aliquid quia excepturi vel. Molestias fuga perspiciatis fugit, praesentium aliquid doloremque aperiam quis veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, architecto dicta. Sint ullam eaque cumque sunt voluptatibus illo, maiores aspernatur consequatur repellat fugiat excepturi tempore praesentium est soluta. Voluptatum, sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim explicabo neque quae? Assumenda totam, iusto voluptates magnam illum magni, molestiae nostrum inventore distinctio necessitatibus deserunt quam expedita tempora culpa laboriosam!
+                        </p>
+                </div>
+                
+            </div>
+        </div>
+
+
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
