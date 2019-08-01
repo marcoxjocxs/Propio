@@ -1,4 +1,4 @@
-#mainNav {
+ #mainNav {
     min-height: 56px;
     background-color: #fff
 }
@@ -199,4 +199,8 @@ body {
         border-width: .25rem;
         width: 30%
     }
+}
+#estiloh1_box
+{
+    text-shadow:2px 2px 20px white;
 }
