@@ -2,7 +2,8 @@ window.onload=function()
 {
     var inputBuscar=document.getElementById("buscar");
     var btnBuscar=document.getElementById("btnbuscar");
-    var formFormulario=document.getElementById("formBusqueda");
+    var formBusqueda=document.getElementById("formBusqueda");
+    var divcargar=document.getElementById("cargar")
 
 
     formBusqueda.onsubmit = function(evento)
@@ -16,13 +17,15 @@ window.onload=function()
     //Funcion para hacer la busqueda del lugar en la API de lugares
     function buscarLugar(busqueda)
     {
-        console.log("Cargando...");
+        /* console.log("Cargando..."); */
+        divcargar.removeAttribute("hidden");
         var xhr = new XMLHttpRequest();
         xhr.onreadystatechange = function()
         {
             if (xhr.readyState==4) {
                         console.log("Hecho")
                         console.log(JSON.parse(xhr.responseText));
+                        divcargar.setAttribute("hidden","true");
             }
         }
         xhr.open("GET",`https://devru-latitude-longitude-find-v1.p.rapidapi.com/latlon.php?location=${busqueda}`);
