@@ -73,7 +73,6 @@ window.onload = function () {
             divColumna.onclick = function () {
                 imprimirDetalle(arregloProductos[i].prod_id);
             }
-
         }
     }
 
