@@ -19,4 +19,10 @@ $(".cajota").droppable({
         $(this).css("border-radius","50%");
                 
     }
+});
+
+$("#btnAnimar1").click(function(){
+    $(".efecto1").toggle("shake",100);
 })
+
+$
