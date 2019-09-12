@@ -25,7 +25,8 @@ namespace EjercicioSabado
             Console.WriteLine("Ingrese su fecha de nacimiento");
             fecha = DateTime.Parse(Console.ReadLine());
             Console.WriteLine("Ingrese 1 si tiene privilegios y 0 si no");
-            privilegios = bool.Parse(Console.ReadLine());      
+            privilegios = bool.Parse(Console.ReadLine());
+            Console.WriteLine("Fin del constructor");
         }
 
         public string Nombre { get => nombre; set => nombre = value; }

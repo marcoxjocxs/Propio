@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System;  
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -39,20 +39,22 @@ namespace EjercicioSabado
             if (Convert.ToInt32(cmd.ExecuteScalar()) != 0)
             {
                 Console.WriteLine($"Posee privilegios de Administrador : '{nombre}'");
-                return true;
                 con.CerrarConexion();
+                return true;
+                
             }
             else
             {
                 Console.WriteLine("No Posee privilegios de Administrador");
-                return false;
                 con.CerrarConexion();
+                return false;
+                
             }
         }
         public void crearUsuario(Usuarios usuario)
         {
             cmd = new SqlCommand
-               ($"INSERT INTO USUARIOS (nombre, contrasena,correo,fecha,privilegios) " +
+               ($"INSERT INTO Usuario(nombre, contrasena,correo,fechaNacimiento,privilegios) " +
                $"VALUES ('{usuario.Nombre}', '{usuario.Contrasenia}','{usuario.Correo}','{usuario.Fecha}','{usuario.Privilegios}')",
                con.GetConexion()); 
             con.AbrirConexion();  
@@ -60,10 +62,12 @@ namespace EjercicioSabado
             con.CerrarConexion();
         }
 
-        public void CambiarContraseña(string nombre,string contrasenia)
+        public void CambiarContraseña(string nombre)
         {
+            Console.WriteLine("Ingrese nuevacontraseña");
+            string newcontrasena = Console.ReadLine();
             cmd = new SqlCommand
-               ($"UPDATE USUARIOS SET contrasena = '{contrasenia}' " +
+               ($"UPDATE Usuario SET contrasena = '{newcontrasena}' " +
                $"WHERE NOMBRE = '{nombre}'", con.GetConexion());
             con.AbrirConexion();
             cmd.ExecuteNonQuery();
@@ -77,8 +81,23 @@ namespace EjercicioSabado
             cmd = new SqlCommand
                ($"DELETE FROM USUARIOS " +
                $"WHERE NOMBRE = '{nombre}'", con.GetConexion());
+            con.AbrirConexion();
             cmd.ExecuteNonQuery();
+            con.CerrarConexion();
+        }
+        public void mostrarUsuarios()
+        {
+            Console.WriteLine("Listado de Usuarios registrados");
+            cmd = new SqlCommand($"SELECT NOMBRE FROM Usuario", con.GetConexion());
+            con.AbrirConexion();
+            SqlDataReader reader = cmd.ExecuteReader();
+            int i = 0;
+            while (reader.Read())
+            {
+                Console.WriteLine(reader[i]);
+            }
+            con.CerrarConexion();
         }
 
-    }
+    } 
 }

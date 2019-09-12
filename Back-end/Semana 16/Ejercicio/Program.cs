@@ -60,16 +60,17 @@ namespace EjercicioSabado
                                                 }
                                             case 2:
                                                 {
-                                                    funcion.CambiarContraseña(nombre,contrasenia);
+                                                    funcion.CambiarContraseña(nombre);
                                                     break;
                                                 }
                                             case 3:
                                                 {
-
+                                                    funcion.BorrarUsuario();
                                                     break;
                                                 }
                                             case 4:
                                                 {
+                                                    funcion.mostrarUsuarios();
                                                     break;
                                                 }
                                         }
