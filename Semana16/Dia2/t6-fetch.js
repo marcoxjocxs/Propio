@@ -25,7 +25,7 @@ window.onload = function(){
         let configuracion = {
             method: 'POST',
             //body = los datos que vamos a enviar al servidor
-            body:JSON.stringify(objRestaurante),
+            body: JSON.stringify(objRestaurante),
             //recordemos que indicamos que tipo de datos estamos enviando
             headers:{'Content-Type':'application/json'}
 
