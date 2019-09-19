@@ -18,12 +18,12 @@ window.onload = function () {
     function getRestaurantes() {
         //nos conectaremosa la BD, y le pasaremos a que nodo queremos conectarnos
 
-        var referencia = firebase.database().ref("1");
+        var referencia = firebase.database().ref("restaurante");
 
         referencia.on("value", data => {
             //console.log(data);
             data.forEach(fila => {
-                //console.log(fila.key);
+                console.log(fila.key);
                 console.log(fila.val().nombre);
                 console.log(fila.val().direccion);
             })

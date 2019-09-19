@@ -13,7 +13,6 @@ function loCorrecto(target)
     }
     
 }
-
 @loCorrecto
 class Persona{
     nombre:string
