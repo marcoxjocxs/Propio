@@ -1,0 +1,28 @@
+.boton{
+    outline: none;
+    background-color: brown;
+    color:#ccc;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:5px;
+}
+
+
+code{
+    font-family:'Courier New', Courier, monospace;
+    color: #A21f55;
+}
+
+.relleno-interno{
+    padding: 10px 5px;
+}
+
+.texto-exito{
+    color: green;
+}
+
+.texto-error{
+    color: #992233;
+}
