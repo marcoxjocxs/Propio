@@ -3,8 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
 };
+export const URL_BACKEND="http://5d4a3b285c331e00148eaed5.mockapi.io";
 
 /*
  * For easier debugging in development mode, you can import the following file
