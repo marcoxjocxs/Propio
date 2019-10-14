@@ -16,8 +16,6 @@ import { VerFacturaComponent } from './components/ver-factura/ver-factura.compon
 // para tener la posibilidad de usar [(ngModel)]
 import { FormsModule } from '@angular/forms';
 
-//SweetAlert2
-import 'sweetalert2/src/sweetalert2.scss'
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,15 +24,13 @@ import 'sweetalert2/src/sweetalert2.scss'
     HomeComponent,
     ErrorComponent,
     CrearFacturaComponent,
-    VerFacturaComponent,
-    
+    VerFacturaComponent
   ],
   imports: [
     BrowserModule,
     RUTAS,
     HttpClientModule,
     FormsModule
-    
   ],
   providers: [],
   bootstrap: [AppComponent]
