@@ -15,6 +15,9 @@ import { environment } from '../environments/environment';
 import {AngularFireDatabaseModule} from '@angular/fire/database';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {AngularFireStorageModule} from '@angular/fire/storage';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/login/register.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +27,9 @@ import {AngularFireStorageModule} from '@angular/fire/storage';
     PabellonesComponent,
     FirebaseComponent,
     RealtimeComponent,
-    FirestoreComponent
+    FirestoreComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +38,9 @@ import {AngularFireStorageModule} from '@angular/fire/storage';
     AngularFireDatabaseModule,
     FormsModule,
     ReactiveFormsModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

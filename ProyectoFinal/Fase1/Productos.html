@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card-header">
+                    Ingreso de Productos
+                </div>
+                <div class="card-body">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-6"></div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Id</label>
+                                    <input type="text" class="form-control" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="selectCategoria">Categoria</label>
+                                    <select name="" id="selectCategoria" class="form-control">
+                                                <option value="c">Construccion</option>
+                                                <option value="t">Tecnologia</option>
+                                                <option value="a">Abarrotes</option>
+                                        </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="selectCategoria">Subcategoria</label>
+                                    <select name="" id="selecSubCategoria" class="form-control">
+                                            <option value="m">materiales</option>
+                                            <option value="h">herramientas</option>
+                                            <option value="p">Pintura</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Nombre Producto</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label>Cantidad</label>
+                                <input type="number" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label>Precio</label>
+                                <input type="number" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label>Descripcion</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="col-md-6">
+                <div class="form-group col-md-6">
+                    <label for="">Estado de Productos</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" id="mñn" name="inputNombre">
+                            </div>
+                        </div>
+                        <label for="mñn" class="form-control">Activo</label>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" id="trd" name="inputAlmacen">
+                            </div>
+                        </div>
+                        <label for="trd" class="form-control">Almacen</label>
+                    </div>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" id="trd" name="inputInactivo" disabled>
+                            </div>
+                        </div>
+                        <label for="trd" class="form-control">Inactivo</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group col-md-6">
+                    <label for="">Fecha</label>
+                    <div class="input-group">
+
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" id="trd" name="eleccionTipo" checked>
+                            </div>
+                            <div class="input-group-text">
+                                <input type="date" id="especifica" name="inputFeEs" checked>
+                            </div>
+                        </div>
+                        <label for="mñn" class="form-control">Fecha Especifica</label>
+
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">
+                                <input type="radio" id="trd" name="eleccionTipo" checked>
+                            </div>
+                            <div class="input-group-text">
+
+                                <input type="date" id="rango" name="inputFeRa">
+                            </div>
+                            <div class="input-group-text">
+                                <input type="date" id="rango" name="inputFeRa">
+                            </div>
+                        </div>
+                        <label for="trd" class="form-control">Rango de Fechas</label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Cant.</th>
+                            <th>Nombre_Producto</th>
+                            <th>Categoria</th>
+                            <th>Precio Unitario</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+
+                </table>
+            </div>
+            <hr>
+            <div class="col-md-12">
+                <button class="btn btn-primary btn-block">Subir a base de datos</button>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
