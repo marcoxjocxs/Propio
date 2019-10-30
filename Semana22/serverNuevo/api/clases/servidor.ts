@@ -33,7 +33,7 @@ export class Servidor {
     this.app.listen(this.puerto, () => {
       console.log("Servidor corriendo correctamente en el puerto " + this.puerto);
       pruebaConexion();
-      sequelize.sync({force:true}).then(()=>{
+      sequelize.sync({force:false}).then(()=>{
         console.log("Tablas creadas con exito");
       }).catch((error:any)=>{
         console.log("Algo a pasao llama a alguien de CodiGo",error);

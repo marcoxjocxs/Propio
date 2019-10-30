@@ -1,7 +1,11 @@
 import { Router } from 'express';
+import { producto_controller } from '../controladores/Producto';
+
 /* import { getProductos, getProductoById, createdProduct} from './../controladores/Producto' */
 
 export let producto_router = Router();
+producto_router.get('/producto',producto_controller.getAll);
+
 
 /* producto_router.get('/productos', getProductos);
 producto_router.get('/productos/:idProducto', getProductoById);
