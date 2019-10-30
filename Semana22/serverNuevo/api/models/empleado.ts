@@ -1,26 +1,26 @@
 import { Sequelize, Model } from "sequelize";
 
 
-export var empleado = (sequelize: Sequelize, type: any) => {
+export var empleado_model = (sequelize: Sequelize, type: any) => {
 
     class empleado_model extends Model{};
 
     /* var producto_model = sequelize.define('t_producto', { */
         empleado_model.init({
-        prop_id: {
+            emp_id: {
             type: type.INTEGER,
             primaryKey: true,
             autoIncrement: true,
             allowNull: false
         },
-        prod_nom: {
+        emp_nom: {
             type: type.STRING(100)
         },
-        prod_descr:{
-            type:type.STRING(1000)
+        emp_ape:{
+            type:type.STRING(100)
         },
-        prod_price:{
-            type:type.DECIMAL(5,2)
+        emp_dni:{
+            type:type.STRING(11)
         }
 
     },
