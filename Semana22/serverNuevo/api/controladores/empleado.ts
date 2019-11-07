@@ -1,49 +1,66 @@
 import { Request, Response } from "express";
-import { Producto } from '../config/sequelize';
+import { Empleado, Ventas } from '../config/sequelize';
 
-export var producto_controller = {
+export var empleado_controller = {
     getAll: (req: Request, res: Response) => {
-        Producto.findAll().then((productos: any) => {
-            console.log("Obteniendo los productos", productos);
+        Empleado.findAll({
+            include: [
+                { model: Ventas }
+            ]
+        }).then((empleados: any) => {
+            console.log("Empleados Obtenidos", empleados);
+            empleados.forEach((empleado:any)=>{
+                empleado.mostrarDatos();
+            });
+            res.status(200);
             res.send({
-                "message": "Productos Obtenidos",
-                "content": productos
-            })
+                success: true,
+                message: 'Lista de Empleados',
+                content: empleados
+            });
+        }).catch((error: any) => {
+            console.log(error);
+            res.status(404);
+            res.send({
+                success: false,
+                message: 'Ha ocurrido un errro al obtener los datos',
+                content: ''
+            });
         })
     },
     create: (req: Request, res: Response) => {
         //obtengamos el rqu body
         console.log(req.body);
-        Producto.create(req.body).then((ProductoCreado) => {
-            if (ProductoCreado) {
+        Empleado.create(req.body).then((empleadoCreado) => {
+            if (empleadoCreado) {
                 let respuesta = {
                     sucess: true,
-                    message: 'Producto Creado',
-                    content: ProductoCreado
+                    message: 'Usuario Creado',
+                    content: empleadoCreado
                 }
                 res.status(201).send(respuesta);
             }
         }).catch((error: any) => {
-            console.log("error al crear producto", error);
+            console.log("error al crear empleado", error);
             res.status(500).send("Ocurio un error");
         });
     },
     getById: (req: Request, res: Response) => {
-        let { id_producto } = req.params;
-        Producto.findByPk(id_producto).then((producto) => {
-            if (producto) {
+        let { id_empleado } = req.params;
+        Empleado.findByPk(id_empleado).then((empleado) => {
+            if (empleado) {
                 let respuesta = {
                     sucess: true,
-                    message: "Producto Encontrado",
-                    content: producto
+                    message: "Empleado Encontrado",
+                    content: empleado
                 }
                 res.status(200).send(respuesta)
             }
             else {
                 let respuesta = {
                     sucess: false,
-                    message: "Producto no encontrado",
-                    content: producto
+                    message: "Empleado no encontrado",
+                    content: empleado
                 }
                 res.status(404).send(respuesta)
             }
@@ -52,20 +69,20 @@ export var producto_controller = {
         })
     },
     DeleteById: (req: Request, res: Response) => {
-        let { id_producto } = req.params;
-        Producto.destroy({
+        let { id_empleado } = req.params;
+        Empleado.destroy({
             where: {
-                prop_id: id_producto
+                emp_id: id_empleado
             }
         }).then((cantidad) => {
             if (cantidad > 0) {
                 console.log("Cant", cantidad);
                 let respuesta = {
                     sucess: true,
-                    message: "Producto Eliminado",
+                    message: "Empleado Eliminado",
                     content: cantidad
                 }
-                res.status(200).send(respuesta);
+                res.status(200).send(respuesta)
             }
             else{
                 let respuesta = {
@@ -73,17 +90,17 @@ export var producto_controller = {
                     message: "No se ha eliminado",
                     content: cantidad
                 }
-                res.status(500).send(respuesta);
+                res.status(500).send(respuesta)
             }
         })
     },
     updateById:(req:Request,res:Response) =>{
-        let {id_producto} = req.params;
+        let {id_empleado} = req.params;
         //El contenido a actualizar que registro va actualzar
 
-        Producto.update(req.body,{
+        Empleado.update(req.body,{
             where:{
-                prop_id:id_producto
+                emp_id:id_empleado
             }
         }).then((cantidad:any)=>{
             if(cantidad>0)
