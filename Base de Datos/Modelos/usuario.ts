@@ -15,11 +15,9 @@ export let usuario_model = (sequelize: any) => {
         },
         usu_hash: {
             type: DataTypes.TEXT,
-            allowNull: true
         },
         usu_salt: {
             type: DataTypes.TEXT,
-            allowNull: true
         },
         usu_est: {
             type: DataTypes.STRING(45),
