@@ -5,8 +5,8 @@ import { reserva_model } from '../modelos/reserva';
 import { usuario_model } from '../modelos/usuario';
 const Sequelize = require("sequelize");
 
-export const conexion = new Sequelize('aulas', 'root', 'root', {
-  host: 'localhost',
+export const conexion = new Sequelize('XD6YOljUha', 'XD6YOljUha', 'lh9SnETRZ1', {
+  host: 'remotemysql.com',
   dialect: 'mysql',
   timezone: '-06:00',
   // configuración para lectura de fechas en la base de datos
