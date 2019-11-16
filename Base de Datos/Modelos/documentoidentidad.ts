@@ -1,6 +1,6 @@
 import { DataTypes } from 'sequelize';
 
-export let Distrito_model = (sequelize: any) => {
+export let catizacionentidaddetalle_model = (sequelize: any) => {
 
   let docidentidad = sequelize.define('t_documentosidentidad', {
     doid_id: {

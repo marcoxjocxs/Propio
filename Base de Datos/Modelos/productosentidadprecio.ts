@@ -1,6 +1,6 @@
 import { DataTypes } from 'sequelize';
 
-export let Categorias_model = (sequelize: any) => {
+export let productoentidadprecio_model = (sequelize: any) => {
 
     let prodEntiPrec = sequelize.define('t_productosentidadprecio', {
         prp_precio: {
